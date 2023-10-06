@@ -5,6 +5,7 @@ import { getProductDetails } from "../../redux/actions/productActions";
 import { Box, styled, Grid } from "@mui/material";
 import ActinDetails from "./ActionDetails";
 import ProductDetail from "./ProductDetail";
+import { Helmet } from "react-helmet";
 const Component = styled(Box)`
   background: #f2f2f2;
   margin-top: 55px;
@@ -35,6 +36,12 @@ const DetailsView = () => {
   console.log(product);
   return (
     <Component>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>My Title</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <meta property="og:image" content={product?.detailUrl} />
+            </Helmet>
       {product && Object.keys(product).length && 
         <Container container >
           <Grid item lg={4} md={4} sm={8} xs={12}>

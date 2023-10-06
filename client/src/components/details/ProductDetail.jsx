@@ -34,6 +34,7 @@ const ProductDetail = ({product})=>{
     return(
         
         <>
+            
         <Typography>{product.title.longTitle}</Typography>
         <Typography style={{ marginTop: 5, color: "#878787", fontSize: 14,display:'flex'  }}>8 Ratings & 1 Reviews
           <Box Component="span">

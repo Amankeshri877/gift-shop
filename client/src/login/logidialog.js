@@ -15,7 +15,7 @@ const Image = styled(Box)`
   background: #2874f0
     url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png)
     center 85% no-repeat;
-  height: 82.5%;
+  height: 81.9%;
   width: 28%;
   padding: 45px 35px;
 `;

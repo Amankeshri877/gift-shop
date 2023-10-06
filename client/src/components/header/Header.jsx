@@ -7,7 +7,7 @@ import CustomButtons from "./CustomButtons";
 import { Link } from "react-router-dom";
 
 const StyledHeader = styled(AppBar)`
-  background: #2874f0;
+  background: #e75480 ;
   height: 55px;
 `;
 const Component = styled(Link)`
@@ -39,8 +39,7 @@ const MenuButton = styled(IconButton)(({theme})=>({
 }))
 
 const Header = () => {
-  const logoURL =
-    "https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png";
+
   const subURL =
     "https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png";
   
@@ -73,7 +72,7 @@ const Header = () => {
           {list()}
         </Drawer>
         <Component to="/">
-          <img src={logoURL} alt="logo" style={{ width: 75 }} />
+          
           <Box style={{ display: "flex" }}>
             <SubHeading>
               Explore&nbsp;
