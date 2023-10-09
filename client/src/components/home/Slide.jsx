@@ -55,7 +55,7 @@ const Text = styled(Typography)`
 font-size:14px;
 margin-top:5px;
 `
-const timerURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg';
+// const timerURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg';
 const renderer = ({ hours, minutes, seconds } )=>{
    return <Box variant="span">{hours} : {minutes} : {seconds} Left</Box>
 }
@@ -68,7 +68,7 @@ const Slide = ({ products ,title,timer}) =>{
           {
             timer &&
                    <Timer>
-          <img src={timerURL} alt="timer"  style={{width:24}} />
+          {/* <img src={timerURL} alt="timer"  style={{width:24}} /> */}
           <Countdown date={Date.now() + 5.04e+7} renderer={renderer}  />
         </Timer>
           }

@@ -12,8 +12,7 @@ const NewBox = styled(Box)`
   height: 70vh;
 `;
 const Image = styled(Box)`
-  background: #2874f0
-    url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png)
+  background: #FF0000
     center 85% no-repeat;
   height: 81.9%;
   width: 28%;
@@ -68,7 +67,7 @@ const accountInitialValues = {
   login: {
     view: "login",
     heading: "Login",
-    subHeading: "Get access to your Orders,Wishlist and Recommendation",
+    subHeading: "",
   },
   signup: {
     view: "signup",
@@ -153,14 +152,13 @@ const LoginDialog = ({ open, setOpen }) => {
               {error &&  <Error>Pleas Enter valid username or password </Error>}
               <TextField variant="standard" onChange={(e) => OnValueChange(e)} name="password"  label="Enter Password" />
               <Text>
-                By continuing, you agree to Flipkart's Terms of Use and Privacy
-                Policy.
+           
               </Text>
               <LoginButton onClick={()=>loginUser()}  >Login</LoginButton>
               <Typography style={{ textAlign: "center" }}>OR</Typography>
               <RequestButton>Request Otp</RequestButton>
               <CreateAccount onClick={() => toggleSignup()}>
-                New to Flipkart? Create an account
+                Register here
               </CreateAccount>
             </Wrapper>
           ) : (

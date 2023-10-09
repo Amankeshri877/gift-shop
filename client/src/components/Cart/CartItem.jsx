@@ -23,7 +23,7 @@ color:#000;
 `
 
 const CartItem =({item})=>{
-    const fassured ="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png";
+    // const fassured ="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png";
     const dispatch =useDispatch();
   const removeItemFromCart = (id)=>{
     dispatch(removeFromCart(id))
@@ -38,7 +38,7 @@ const CartItem =({item})=>{
         <Box style={{margin:20}} >
           <Typography>{addEllipsis(item.title.longTitle)}</Typography>
           <SmallText style={{display:'flex'}} >Seller:RetailNet
-            <Box Component="span"><img src={fassured} alt="fassured" style={{width:50,marginLeft:10}} /></Box>
+            {/* <Box Component="span"><img src={fassured} alt="fassured" style={{width:50,marginLeft:10}} /></Box> */}
           </SmallText>
           <Typography  style={{margin:'20px 0px', display:'flex'}} >
           <Box Component="span" style={{  fontWeight:600,marginTop:13,fontSize:18 }}>₹{item.price.cost}</Box>&nbsp;&nbsp;&nbsp;

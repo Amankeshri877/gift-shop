@@ -59,7 +59,7 @@ const CustomButtons = () => {
       )}
 
       <Typography style={{ marginTop: 3, width: 135, }}>
-        Become a Seller
+        hello user
       </Typography>
       <Typography style={{ marginTop: 3 }}>More</Typography>
       <Container style={{ display: "flex", marginTop: 1 }} to="/cart" >

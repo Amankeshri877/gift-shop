@@ -40,8 +40,8 @@ const MenuButton = styled(IconButton)(({theme})=>({
 
 const Header = () => {
 
-  const subURL =
-    "https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png";
+ // const subURL =
+   // "https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png";
   
     const [open,setOpen] = useState(false);
 
@@ -75,11 +75,11 @@ const Header = () => {
           
           <Box style={{ display: "flex" }}>
             <SubHeading>
-              Explore&nbsp;
+      
               <Box component="span" style={{ color: "#FFE500" }}>
-                plus
+            
               </Box>
-              <PlusImage src={subURL} alt="sub-logo" />
+              <PlusImage  />
             </SubHeading>
           </Box>
         </Component>
